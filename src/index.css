@@ -1,0 +1,103 @@
+/* src\index.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f5;
+  color: #20382d;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(100% - 40px, 960px);
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.label {
+  margin-top: 32px;
+  color: #48785b;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(40px, 7vw, 64px);
+  line-height: 1.1;
+}
+
+.intro {
+  max-width: 600px;
+  margin-bottom: 36px;
+  color: #58685e;
+  font-size: 18px;
+}
+
+.panel,
+.card {
+  padding: 28px;
+  background: white;
+  border: 1px solid #dce6df;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px #20382d08;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button {
+  margin-top: 16px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #286044;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1c4832;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b88121;
+  outline-offset: 4px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card h2 {
+  font-size: 21px;
+}
+
+.card p {
+  color: #58685e;
+}
+
+.back-link {
+  color: #286044;
+  font-weight: bold;
+}
+
+@media (max-width: 720px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 35px 0;
+  }
+}
